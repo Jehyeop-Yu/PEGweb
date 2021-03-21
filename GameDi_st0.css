@@ -1,0 +1,36 @@
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    background-color: rgb(92, 94, 228);
+}
+
+.GameDi-button-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.GameDi-button-image img {
+    max-width: 100%;
+    position: relative;
+    opacity: 1;
+}
+
+.GameDi-button-image:hover img {
+    opacity: 0.80;
+    transform: scale(1.1);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.GameDi-button-image:active img {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.GameDi-button-image:visited img{
+    opacity: 1;
+    transform: scale(2.05);
+}
