@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모장</title>
+    <link rel="stylesheet" href="메모장.css">
+    <script src="./메모장.js"></script>
+</head>
+<body>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+    <input type="button" value="night" onclick="
+    if(this.value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        this.value = 'day';
+    }
+    else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        this.value = 'night';
+    }
+    ">
+
+    <div class="add">
+        <ul>
+            <li><input id="sports" type="button" value="sports" onclick="add()"></li>
+        </ul>
+    </div>
+
+    <!-- <div class="Game-MENU-bar">
+        <ul>
+            <li><a class="" href="Action">액션</a></li>
+            <li><a href="" onclick="add"></a></li>
+            <li><input type="button" value="" onclick="add"></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div> -->
+</body>
+</html>

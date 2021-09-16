@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>GameDi_main_test</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/GameDi_st0_test.css">
+    <script src="../javascript/GameDi_test.js"></script>
+    <script src="../../lib/jQuery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="GameDi-logo">
+        <div class="GameDi-logo-home">
+            <a class="GameDi-logo-home-link" href="GameDi_main.html">
+                <img src="logo.png" width="35" alt="GameDI_logo">
+                <h1>GameDi</h1>
+            </a>
+        </div>
+    </div>
+    <div class="GameDi-main" id="grid">
+        <div class="Game-MENU">
+            <div class="Game-MENU-bar">
+                <ul id='MENU-edit'>
+                    <li id="editbox">
+                        <a onclick="edit()">편집</a>
+                        <a onclick="save()">저장</a>
+                    </li>
+                    <div id="MenuList">
+                        <li id="1" style="display: block;"><input type="checkbox" onclick="chk()" style="display: none;" name="list"><a href="Action">액션</a></li>
+                        <li id="2" style="display: block;"><input type="checkbox" onclick="chk()" style="display: none;" name="list"><a href="Sports">스포츠</a></li>
+                        <li id="3" style="display: block;"><input type="checkbox" onclick="chk()" style="display: none;" name="list"><a href="Racing">레이싱</a></li>
+                        <li id="4" style="display: block;"><input type="checkbox" onclick="chk()" style="display: none;" name="list"><a href="Indie">인디</a></li>
+                        <li id="5" style="display: block;"><input type="checkbox" onclick="chk()" style="display: none;" name="list"><a href="Simulation">시뮬레이션</a></li>
+                        <li id="6" style="display: block;"><input type="checkbox" onclick="chk()" style="display: none;" name="list"><a href="Strategy">전략</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="GameDi-contents">
+            게임 목록 또는 표지
+        </div>
+    </div>
+</div>
+</body>
+</html>

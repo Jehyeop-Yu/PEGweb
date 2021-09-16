@@ -1,0 +1,20 @@
+<div>
+    <ul id='a'>
+        <li>하나</li>
+    </ul>
+</div>
+<input type='button' onclick='delete();' value='삭제' style="display: none;">
+
+<script type='text/javascript'>
+    // "추가" 버튼 클릭시 실행 되는 함수 입니다.
+    function plusFun() {
+        var name = prompt('Menu Name','');
+        //plusUl 변수에 createElement 를 사용해 생성할 엘리먼트를 담습니다.
+        var plusUl = document.createElement('li');
+        // 추가할 plusUl 엘리먼트 안의 내용을 정해줍니다. ( 꼭 정해야 하는건 아닙니다. )
+        plusUl.innerHTML =  "<a>"+name+"</a>";   
+        // appendChild 로 이전에 정의한 plusUl 변수의 내용을 실제 추가합니다.
+        document.getElementById('a').appendChild(plusUl);
+    } 
+</script>
+
